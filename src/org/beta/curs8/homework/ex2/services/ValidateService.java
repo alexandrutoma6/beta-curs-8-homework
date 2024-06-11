@@ -5,14 +5,14 @@ import java.time.LocalDate;
 public class ValidateService {
 
     //verify if the name have First and Last name
-    public static Boolean nameValidation(String name) {
+    public static Boolean containsFirstAndLastName(String name) {
         String[] nameArray = name.split(" ");
 
         return nameArray.length >= 2;
     }
 
     //verify if the date of birth is valid
-    public static Boolean dateValidation(LocalDate date) {
+    public static Boolean isBirthDateBeforeToday(LocalDate date) {
         LocalDate today = LocalDate.now();
         return date.isBefore(today);
     }

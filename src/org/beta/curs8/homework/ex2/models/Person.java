@@ -16,11 +16,11 @@ public class Person implements Human {
 
     public Person(String name, LocalDate dob, String address, String gender, Boolean married) {
 
-        if (ValidateService.nameValidation(name)) {
+        if (ValidateService.containsFirstAndLastName(name)) {
             this.name = name;
         }
         //even if the date is invalid, it sets the dob as null
-        if (ValidateService.dateValidation(dob)) {
+        if (ValidateService.isBirthDateBeforeToday(dob)) {
             this.dob = dob;
         }
         if (ValidateService.genderValidation(gender)) {
