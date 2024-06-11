@@ -4,6 +4,7 @@ import org.beta.curs8.homework.ex2.models.DatabaseAdmin;
 import org.beta.curs8.homework.ex2.models.Employee;
 import org.beta.curs8.homework.ex2.models.Person;
 import org.beta.curs8.homework.ex2.models.Programmer;
+import org.beta.curs8.homework.ex3.models.PersonService;
 
 import java.time.LocalDate;
 import java.util.Calendar;
@@ -34,5 +35,7 @@ public class Main {
                 dateEmployment, "programator2", "MongoDb");
 
         System.out.println(myDatabaseAdmin.getAddress()); // the address with prefix "db Admin"
+
+
     }
 }
