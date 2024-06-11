@@ -47,21 +47,12 @@ public class Fridge extends Electronics {
     //the powerOff method have a user validation to confirm turning off the fridge
     public void powerOff() {
         if (isOn) {
-            String[] regex = {"y", "Y", "yes", "Yes", "YES"};
             Scanner sc = new Scanner(System.in);
 
             System.out.println("Are you sure you want to power off? (yes/no)");
             String input = sc.next();
 
-            boolean sure = false;
-            for (String validYes : regex) {
-                if (input.equals(validYes)) {
-                    sure = true;
-                    break;
-                }
-            }
-
-            if (sure) {
+            if ("Yes".equals(input)) {
                 System.out.println("Powering off...");
                 isOn = false;
             } else {
