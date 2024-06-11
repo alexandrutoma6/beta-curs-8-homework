@@ -3,18 +3,18 @@ package org.beta.curs8.homework.ex2.models;
 import org.beta.curs8.homework.ex2.interfaces.Human;
 import org.beta.curs8.homework.ex2.services.ValidateService;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Person implements Human {
 
     private String name;
-    private Date dob;
+    private LocalDate dob;
     private String address;
     private String gender;
     private Boolean married;
 
 
-    public Person(String name, Date dob, String address, String gender, Boolean married) {
+    public Person(String name, LocalDate dob, String address, String gender, Boolean married) {
 
         if (ValidateService.nameValidation(name)) {
             this.name = name;
@@ -51,7 +51,7 @@ public class Person implements Human {
     }
 
     @Override
-    public Date getDate() {
+    public LocalDate getDate() {
         return dob;
     }
 

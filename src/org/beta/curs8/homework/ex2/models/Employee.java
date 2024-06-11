@@ -1,20 +1,20 @@
 package org.beta.curs8.homework.ex2.models;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Employee extends Person {
 
-    private Date dateOfEmployment;
+    private LocalDate dateOfEmployment;
     private String position;
 
-    public Employee(String name, Date dob, String address, String gender, Boolean married,
-                    Date dateOfEmployment, String position) {
+    public Employee(String name, LocalDate dob, String address, String gender, Boolean married,
+                    LocalDate dateOfEmployment, String position) {
         super(name, dob, address, gender, married);
         this.dateOfEmployment = dateOfEmployment;
         this.position = position;
     }
 
-    public Date getDateOfEmployment() {
+    public LocalDate getDateOfEmployment() {
         return dateOfEmployment;
     }
 

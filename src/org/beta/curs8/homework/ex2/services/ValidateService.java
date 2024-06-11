@@ -1,6 +1,6 @@
 package org.beta.curs8.homework.ex2.services;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class ValidateService {
 
@@ -12,10 +12,9 @@ public class ValidateService {
     }
 
     //verify if the date of birth is valid
-    //the validation on date doesn't work as intended...
-    public static Boolean dateValidation(Date date) {
-        Date today = new Date();
-        return date.before(today);
+    public static Boolean dateValidation(LocalDate date) {
+        LocalDate today = LocalDate.now();
+        return date.isBefore(today);
     }
 
     //validate gender

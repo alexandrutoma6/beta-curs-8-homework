@@ -1,6 +1,6 @@
 package org.beta.curs8.homework.ex2.interfaces;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public interface Human {
 
@@ -8,7 +8,7 @@ public interface Human {
 
     String getLastName();
 
-    Date getDate();
+    LocalDate getDate();
 
     String getAddress();
 }
