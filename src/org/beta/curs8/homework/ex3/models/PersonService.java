@@ -13,7 +13,6 @@ public class PersonService {
         this.person = person;
     }
 
-    //concat the first and last name from the person object
     public String getName() {
         return person.getFirstName() + " " + person.getLastName();
     }
