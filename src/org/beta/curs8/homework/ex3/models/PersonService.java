@@ -7,7 +7,7 @@ import java.time.Period;
 
 public class PersonService {
 
-    private Person person;
+    private final Person person;
 
     public PersonService(Person person) {
         this.person = person;
