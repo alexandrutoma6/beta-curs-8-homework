@@ -23,7 +23,7 @@ public class Person implements Human {
         if (ValidateService.isBirthDateBeforeToday(dob)) {
             this.dob = dob;
         }
-        if (ValidateService.genderValidation(gender)) {
+        if (ValidateService.isValidGender(gender)) {
             this.gender = gender;
         }
         this.address = address;

@@ -18,7 +18,7 @@ public class ValidateService {
     }
 
     //validate gender
-    public static Boolean genderValidation(String gender) {
+    public static Boolean isValidGender(String gender) {
         String[] genders = {"male", "female"};
         for (String gen : genders) if (gender.equals(gen)) return true;
         return false;
